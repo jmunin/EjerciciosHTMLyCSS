@@ -1,0 +1,32 @@
+label {
+    display: block;
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding-right: 10px;
+}
+
+legend {
+    /* background-color: #000; */
+    /* color: #fff; */
+    padding: 3px 6px;
+}
+
+input, select {
+    font-size: 0.9rem;
+    padding: 2px 5px;
+    width: 300px ;
+}
+
+input:invalid + span::after {
+    position: absolute;
+    content: "✖";
+    padding-left: 5px;
+    color: #8b0000;
+  }
+  
+  input:valid + span::after {
+    position: absolute;
+    content: "✓";
+    padding-left: 5px;
+    color: #009000;
+  }

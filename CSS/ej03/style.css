@@ -1,4 +1,9 @@
-.contenedor-grid{
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.contenedor-grid {
     display: grid;
     background-color: grey;
 }
@@ -31,40 +36,51 @@ div {
 .color2 {
     background-color: green;
 }
+
 .color3 {
     background-color: blue;
 }
+
 .color4 {
     background-color: magenta;
 }
+
 .color5 {
     background-color: yellow;
 }
-.grupo > div:nth-child(1){
+
+.grupo > div:nth-child(1) {
     cursor: pointer;
 }
-.grupo > div:nth-child(2){
+
+.grupo > div:nth-child(2) {
     cursor:help;
 }
-.grupo > div:nth-child(3){
+
+.grupo > div:nth-child(3) {
     cursor:wait;
 }
-.grupo > div:nth-child(4){
+
+.grupo > div:nth-child(4) {
     cursor:grab;
 }
-.grupo > div:nth-child(5){
+
+.grupo > div:nth-child(5) {
     cursor:zoom-in;
 }
 
 .grupo.color1 {
     border:3px dashed black;
 }
+
 .grupo.color2 {
     border:3px dotted black;
 }
+
 .grupo.color3 {
     border:3px double black;
 }
+
 .grupo.color4 {
     border:3px solid black;
 }

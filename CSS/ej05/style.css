@@ -1,0 +1,117 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+}
+
+.grupo1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: rgb(190, 108, 108);
+    border:3px dashed black;
+    margin:5px
+}
+
+.grupo2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: rgb(108, 190, 115);
+    border:3px dotted black;
+    margin:5px
+}
+
+.grupo3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(130, 108, 190);
+    border:3px double black;
+    margin:5px
+}
+
+.grupo4 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    background-color: rgb(194, 182, 11);
+    border:3px solid black;
+    margin:5px
+}
+
+.grupo1 > div {
+    min-width: 50px;
+    min-height: 50px;
+    margin: 10px;
+}
+
+.grupo2 > div {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.grupo3 > div {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border: 3px solid black;
+}
+
+.grupo4 > div {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.color1 {
+    background-color: red;
+}
+
+.color2 {
+    background-color: green;
+}
+
+.color3 {
+    background-color: blue;
+}
+
+.color4 {
+    background-color: magenta;
+}
+
+.color5 {
+    background-color: yellow;
+}
+
+.pointer1 {
+    cursor: pointer;
+}
+
+.pointer2 {
+    cursor: help;
+}
+
+.pointer3 {
+    cursor: wait;
+}
+
+.pointer4 {
+    cursor: grab;
+}
+
+.pointer5 {
+    cursor: zoom-in;
+}
+
+
+

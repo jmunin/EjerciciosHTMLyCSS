@@ -1,0 +1,6 @@
+.imagen-div{
+    background-image: url('./assets/OIP.jpg');
+    background-repeat: no-repeat;
+    background-size:50%;
+    height: 300px;
+}

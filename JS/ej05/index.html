@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio jS 5</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- 5. Crear una aplicación de alarma. Al pulsar el botón de inicio se iniciará una cuenta atrás con 
+        la cantidad de segundos especificada en el cuadro de texto. Al llegara al final del 
+        temporizados se debe mostrar en pantalla que la alarma está sonando.
+            a. Sobre el ejercicio anterior permitir posponer y parar la alarma.
+            b. (Opcional) Podéis añadir un audio a la alarma, este deberá sonar en bucle hasta que 
+            se detenga la alarma.
+    -->
+    <audio id="myAudio">
+        <source src="assets/beep.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    <input type="number" id="txtSegundos" placeholder="Escribir segundos" min="0">
+    <button type="button" id="btnStart" onclick="iniciarTemporizador()">Start</button>
+    <button type="button" id="btnStop" onclick="detenerTemporizador()">Stop</button>
+    <div id="mensaje"></div>
+</body>
+
+</html>

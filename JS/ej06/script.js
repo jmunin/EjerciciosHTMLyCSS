@@ -1,13 +1,11 @@
-let mensaje = "";
-const imagenes = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"];
-
 function addImagen() {
-    let elemento = document.getElementById("imagenes");
-    let num_elementos = elemento.childNodes.length;
+    const imagenes = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"];
+    const elemento = document.getElementById("imagenes");
+    const num_elementos = elemento.childNodes.length;
     const numRandom = randomRangeNumber(0, 4);
     if (num_elementos < 5) {
         if (!document.getElementById(imagenes[numRandom].slice(0, -4))) {
-            let img = document.createElement("img");
+            const img = document.createElement("img");
             img.src = "assets/" + imagenes[numRandom]; // + imagenes[num_elementos];
             img.id = imagenes[numRandom].slice(0, -4); //"img" + (elemento.childNodes.length + 1)
             img.width = 126;
@@ -21,8 +19,8 @@ function addImagen() {
 
 
 function delImagen() {
-    let elemento = document.getElementById("imagenes");
-    let indice = document.getElementById("txtIndice").valueAsNumber;
+    const elemento = document.getElementById("imagenes");
+    const indice = document.getElementById("txtIndice").valueAsNumber;
     removeSpecificNode(elemento, indice);
 }
 

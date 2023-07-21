@@ -12,24 +12,35 @@ function addImagen() {
             img.height = 189;
             img.alt = "Foto de perfil " + imagenes[numRandom];
             elemento.appendChild(img);
+            const txtIndice = document.getElementById("txtIndice");
+            const indice = txtIndice.valueAsNumber;
+            txtIndice.max++;
+            txtIndice.value++;
+            txtIndice.min=1;
         } else
             addImagen();
     }
-}   
+}
 
 
 function delImagen() {
     const elemento = document.getElementById("imagenes");
-    const indice = document.getElementById("txtIndice").valueAsNumber -1;
-    removeSpecificNode(elemento, indice);
+    const indice = document.getElementById("txtIndice").valueAsNumber - 1;
+    if (removeSpecificNode(elemento, indice)) {
+        document.getElementById("txtIndice").max--;
+        document.getElementById("txtIndice").value = indice;
+        document.getElementById("txtIndice").min = (indice > 0 ? 1 : 0);
+    }
 }
 
 function removeSpecificNode(el, index) {
     if (Number.isInteger(index)) {
         const children = el.children;
         if (children.length > 0) {
-            if (children[index] != undefined)
+            if (children[index] != undefined) {
                 el.removeChild(children[index]);
+                return true;
+            }
         }
     }
 }

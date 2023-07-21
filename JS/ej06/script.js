@@ -10,7 +10,7 @@ function addImagen() {
         img.id= imagenes[num_elementos]; //"img" + (elemento.childNodes.length + 1)
         img.width=126;
         img.height=189;
-        img.alt="Foto de perfil";
+        img.alt="Foto de perfil " + num_elementos;
         elemento.appendChild(img);
     }   
 }

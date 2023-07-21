@@ -20,7 +20,7 @@ function addImagen() {
 
 function delImagen() {
     const elemento = document.getElementById("imagenes");
-    const indice = document.getElementById("txtIndice").valueAsNumber;
+    const indice = document.getElementById("txtIndice").valueAsNumber -1;
     removeSpecificNode(elemento, indice);
 }
 

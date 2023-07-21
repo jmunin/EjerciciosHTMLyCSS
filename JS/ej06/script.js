@@ -1,11 +1,13 @@
 let mensaje = "";
+const imagenes = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"];
 
 function addImagen() {
     let elemento = document.getElementById("imagenes");
-    if(elemento.childNodes.length<5){
+    let num_elementos = elemento.childNodes.length;
+    if(num_elementos<5){
         let img = document.createElement("img");
-        img.src = "assets/OIP.jpg";
-        img.id="img" + (elemento.childNodes.length + 1)
+        img.src = "assets/" + imagenes[num_elementos];
+        img.id= imagenes[num_elementos]; //"img" + (elemento.childNodes.length + 1)
         img.width=126;
         img.height=189;
         img.alt="Foto de perfil";

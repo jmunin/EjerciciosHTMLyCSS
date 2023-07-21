@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio jS 6</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- 
+        6. En el html se debe crear un div.
+            a. Al pulsar el botón añadir se debe añadir al div una nueva imagen.
+            b. En el div se deben añadir hasta 5 imágenes (la url de las mismas esta predefinida en 
+            el código).
+            c. Añadir un campo para introducir un valor y otro botón.
+                i. Al pulsar el botón se debe eliminar la imagen que esté en la posición que 
+                coincide con el número introducido en el campo.
+                ii. Controlar que el campo no permite introducir números fuera de rango.
+                1. Si en un momento tengo 3 fotos, solo debo poder introducir valores 
+                entre 1 y 3, cuando tengo 4 debo introducir entre 1 y 4...
+    -->
+
+
+    <button type="button" id="btnStart" onclick="addImagen()">Añadir</button>
+    <input type="number" id="txtIndice" placeholder="Índice imagen a eliminar" min="0" max="5" style="width: 200px;">
+    <button type="button" id="btnStop" onclick="delImagen()">Eliminar</button>
+    <div id="imagenes"></div>
+    <div id="mensaje"></div>
+</body>
+
+</html>

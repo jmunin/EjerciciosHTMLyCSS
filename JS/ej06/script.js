@@ -23,16 +23,8 @@ function removeSpecificNode(el, index) {
     if (!Number.isNaN(index)) {
         var children = el.children;
         if(children.length > 0) {
-            el.removeChild(children[index]);
+            if(children[index]!=null)
+                el.removeChild(children[index]);
         }
     }
-}
-
-
-function mostrarAlarma() {
-    let elemento = document.getElementById("mensaje");
-    let x = document.getElementById("myAudio");
-    elemento.innerHTML = "Alarma sonando";
-    x.play();
-    identificadorDeTemporizador = setTimeout(mostrarAlarma, 1000);
 }
